@@ -154,7 +154,7 @@ $old = date("Y-m-d 00:00:00", strtotime("-$selected_val")); //Value from pdfage
 
 $results = archive_query("select * from `msgs`.`index` where 
 								`server` = \"SERVER\" and
-								`channel` = \"P_MIRTH_CONNECT_CHANEL\" and
+								`channel` = \"P_MIRTH_CONNECT_CHANNEL\" and
 								`mrn` not like \"X%\" and 
 								$cp
 								`msgtype` = \"ORU^R01\" 
@@ -184,8 +184,8 @@ if (!isset($_GET['page'])) {
 $this_page_first_result = ($page-1)*$results_per_page;
 
 $results = archive_query("select * from `msgs`.`index` where 
-								`server` = \"SERVERKNIGHTHU\" and
-								`channel` = \"P_MIRTH_CONNECT_CHANEL\" and
+								`server` = \"SERVER\" and
+								`channel` = \"P_MIRTH_CONNECT_CHANNEL\" and
 								`mrn` not like \"X%\" and 
 								$cp
 								`msgtype` = \"ORU^R01\" 
